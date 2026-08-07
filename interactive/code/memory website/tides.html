@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="sketch3.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: "Homemade Apple", cursive;
+            font-weight: 400;
+        }
+
+        h3 {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #responsive-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>changing tides</h1>  
+
+    <h2><a href="index.html" style="color: antiquewhite;">home</a></h2>  
+
+    <h3>
+        <img src="images/key.png" alt="key" width="184" height="166" usemap="#keymap" id="responsive-img">
+        <map name="keymap">
+            <area shape="default" href="time.html">
+        </map>
+    </h3>
+
+</body>
+</html>

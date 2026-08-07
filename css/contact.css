@@ -1,0 +1,46 @@
+/* ==========================
+   CONTACT
+========================== */
+
+.contact-grid{
+    padding:40px 0 80px;
+}
+
+.contact-grid .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.contact-card{
+    position:relative;
+    background:white;
+    border:2px solid black;
+    padding:30px;
+    transition:.25s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px) rotate(-2deg);
+    background:var(--yellow);
+}
+
+.contact-card h3{
+    font-size:1.8rem;
+    font-weight:800;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.contact-card a{
+    font-size:1.05rem;
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:var(--pink);
+}
+
+.content .button{
+    margin-top:40px;
+}

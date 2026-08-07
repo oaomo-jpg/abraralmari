@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Source audio
+*.aif
+*.wav
+
+# Source design files
+*.ai
+*.docx
+*.pptx
+
+# Source videos
+*Source*
+installation/RTAV1VIDEO.mp4
+visual/Almari_Abrar.mp4
+visual/Almari_Abrar_Project3.mp4
+visual/Almari_Abrar_Project4.mov
+interactive/code/unity game/Screen Recording*.mov

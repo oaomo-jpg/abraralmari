@@ -1,0 +1,71 @@
+/* ==========================
+FEATURED INSTALLATION
+========================== */
+
+.featured-project{
+
+padding:60px 0 120px;
+
+}
+
+.featured-project .container{
+
+display:grid;
+
+grid-template-columns:1.2fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.featured-image img{
+
+width:100%;
+
+display:block;
+
+border:2px solid black;
+
+}
+
+.featured-info h3{
+
+font-size:3rem;
+
+line-height:1;
+
+margin:20px 0;
+
+letter-spacing:-2px;
+
+}
+
+.project-number{
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:var(--orange);
+
+}
+
+.project-meta{
+
+margin:35px 0;
+
+list-style:none;
+
+}
+
+.project-meta li{
+
+margin-bottom:12px;
+
+padding-bottom:12px;
+
+border-bottom:1px solid #ddd;
+
+}

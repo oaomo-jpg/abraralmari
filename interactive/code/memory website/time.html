@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: antiquewhite;
+            font-family: "Homemade Apple", cursive;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Auto transition to main page */
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+
+    <script>
+        setTimeout(() => {
+            document.body.style.animation = "fadeOut 2s ease-in-out forwards";
+            setTimeout(() => {
+                window.location.href = "index.html"; // Redirect to main page
+            }, 2000);
+        }, 4000); // Wait 4 seconds before fading out
+    </script>
+
+</head>
+<body>
+
+    <div>
+        <h1>For creative coding spring 2025</h1>
+        <p>a website by Abrar Almari</p>
+    </div>
+
+</body>
+</html>

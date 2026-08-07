@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Abrar's website </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script src="js/fos.min.js"></script>
+</head>
+<body>
+    <fos-desktop>
+ <fos-icon href="a1"><img src="img/logo.png" alt="about me"></fos-icon> 
+ <fos-icon href="a2"><img src="img/projects.png" alt="projects"></fos-icon>
+ <fos-icon href="a3"> <img src="img/credit.png" alt="credit"></fos-icon>
+ <fos-window name="a1" title="About me">
+    <div class="aboutme">
+    <article>
+        <img src="img/image.png" alt="me">
+        <h3>Hello!</h3>
+        <section><h3>I'm Abrar, an IDM student at NYU! This website was developed for Intro to Web Dev.</h3></section>
+        <p>
+         I like old internet things like Windows 95/98 which I tried to make the theme of this website.
+          I also make stuff like films, photos, designs and music (the consquences of being in IDM).
+         
+        </p>
+        <p>
+         You can find some of my stuff over at the projects page!
+        </p>
+        
+       </article>
+    </div>
+ </fos-window>
+ <fos-window name="a3" title="Credit">
+    <pr>
+        In building this website, I did a lot of research on how to make it look like a desktop:
+        <br>
+        <br>
+        I used icons from https://win98icons.alexmeub.com,
+        <br>
+        <br>
+        I found Victor Riberio's youtube tutorial (https://www.youtube.com/watch?v=rddE1jKPgWk) which led me to his github in which he built a fake operating system using javascript.
+         That javascript file was used for this final project. https://github.com/victorqribeiro/fos; I also looked to his website (https://victorribeiro.com/) index and css files to understand how certain things worked (specifically the css of his start button and his clock which I used for the date)
+         <br>
+         Thank you Victor!!
+         <br>
+         <br>
+         I also found https://simone.computer/#/webdesktops, in which this creator, Simone, collected a bunch of websites that also emulated desktops.
+        I then went through some of them and used developer tools to see how they got certain things to work/look.
+    </pr>
+    
+ </fos-window>
+ <fos-window name="a2" title="Projects">
+    <fos-bar position="top">
+        <fos-menu name="Menu">
+            <fos-menu-item href="panel1">Designs</fos-menu-item>
+            <fos-menu-item href="panel2">Photos</fos-menu-item>
+            <fos-menu-item href="panel3">Videos</fos-menu-item>
+            <!-- <fos-menu-item href="panel4">Music</fos-menu-item> -->
+            
+        </fos-menu>
+    </fos-bar>
+    <br>
+    <br>
+    <br>
+    <fos-panel name="panel1" selected>
+    </div>
+    <h3> Designs </h3> 
+
+ <div class="container">
+     <div class="thumb">
+         <img src="./img/1.jpg" alt="some project">
+         <article class="mask">
+             <h2>Bike repair shop design</h2>
+             <p>Visual foundation studio</p>
+             <a class="info" href="#">learn more</a>
+         </article>
+     </div>
+
+     <div class="thumb">
+         <img src="./img/2.jpg" alt="some project">
+         <article class="mask">
+             <h2>BRS design 2</h2>
+             <p>VFS</p>
+             <a class="info" href="#">learn more</a>
+         </article>
+     </div>
+
+     <div class="thumb">
+         <img src="./img/3.jpg" alt="some project">
+         <article class="mask">
+             <h2>BRS propoganda</h2>
+             <p>VFS</p>
+             <a class="info" href="#">learn more</a>
+         </article>
+     </div>
+
+     </div>
+
+
+     
+
+ </div>
+    </fos-panel>
+    <fos-panel name="panel2">
+    </div>
+
+    <h3> Photos </h3>
+
+
+    <div class="container">
+        <div class="thumb">
+            <img src="./img/4.jpg" alt="some project">
+            <article class="mask">
+                <h2>Narrative Photo</h2>
+                <p>SMI</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        <div class="thumb">
+            <img src="./img/5.jpg" alt="some project">
+            <article class="mask">
+                <h2>Experiment 1</h2>
+                <p>SMI</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+        <div class="thumb">
+            <img src="./img/6.jpg" alt="some project">
+            <article class="mask">
+                <h2>Experiment 2</h2>
+                <p>SMI</p>
+                <a class="info" href="#">learn more</a>
+            </article>
+        </div>
+
+    <!-- </div>
+</fos-panel>
+<fos-panel name="panel3">
+</div>
+<h3>Videos</h3>
+<div class="thumb">
+    <video src="video/tmc final.mp4" alt="film">
+    <article class="mask">
+        <h2>short film</h2>
+        <p>narrative cinema</p>
+        <a class="info" href="#">learn more</a>
+    </article>
+</div> -->
+
+
+        
+
+    </div>
+    </fos-panel>
+ </fos-window>
+ <fos-bar>
+    <div class="start">
+    <fos-menu href="Start" name="Start"> 
+        <fos-menu-item href="a1"> About Me </fos-menu-item>
+        <fos-menu-item href="a2"> Projects</fos-menu-item>
+        <fos-menu-item href="a3"> Credit </fos-menu-item>
+    </fos-menu>
+</div>
+    <div id="myDate">
+        <main id="date">
+            <script type="text/javascript">
+              const date = new Date()
+              let day = date.getDate()
+              let month = date.getMonth() + 1
+              let year = date.getFullYear()
+              let currentDate = `${day}-${month}-${year}`
+              console.log(currentDate)
+              var dateContainer = document.getElementById('date')
+              var p = document.createElement('P') 
+              var text = document.createTextNode(currentDate) 
+              p.appendChild(text) 
+              dateContainer.appendChild(p)
+            </script>
+      
+            <span id="myDate"></span>
+    </div>
+ </fos-bar>
+    </fos-desktop>
+</body>
+</html>
